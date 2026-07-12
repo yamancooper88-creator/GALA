@@ -43,6 +43,7 @@ android {
     }
 
     kotlinOptions {
+        freeCompilerArgs += listOf("-opt-in=androidx.tv.material3.ExperimentalTvMaterial3Api", "-opt-in=androidx.tv.foundation.ExperimentalTvFoundationApi")
         jvmTarget = "11"
     }
 
